@@ -1,0 +1,692 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka&family=Kanit:wght@300&family=Poppins:wght@300&family=Titillium+Web:wght@300&display=swap" rel="stylesheet">
+    <link href="/dist/output.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./styles.css">
+    <title>Index</title>
+
+</head>
+<body class="font-family">
+    <div class="w-full h-auto overflow-x-hidden">
+        <!-- background home image div starts here -->
+        <div class="bgImage">
+            <!-- phone number at the top -->
+            <div class="relative w-full h-auto lg:flex justify-end hidden">
+                <section class="flex justify-between items-center p-4 text-[#fff] text-[11px] gap-4 mx-10">
+                    <div class="flex justify-between items-center gap-2">
+                        <div class="w-3 h-3">
+                            <img src="./images/phone-icon.png" alt="" class="w-full h-full"/>
+                        </div>
+                        <p class="font-semibold">+14 312-423-523</p>
+                    </div>
+                    <p class="font-semibold">+14 312-423-523</p>
+                </section>
+            </div>
+            <!-- end here -->
+
+            <!-- Home page Top navigation starts here -->
+            <div class="w-full h-auto flex justify-center items-center sticky top-0">
+                <div class="w-11/12 h-auto flex justify-between items-center">
+                    <div class="lg:hidden text-white my-6 cursor-pointer hover:-translate-y-1 hover:scale-110 duration-700"
+                    onclick="openDropDownFunction()">
+                        <i class="fa fa-bars fa-lg" aria-hidden="true"></i>
+                    </div>
+                    <div class="p-2 font-semibold text-xl tracking-wide text-[#fff] hidden lg:flex">
+                        <span>Abel's Space</span>
+                    </div>
+                    <div class="p-2 hidden lg:flex justify-between items-center gap-4 tracking-wide text-[#fff] text-sm">
+                        <a href="./html/pages/search.html" class="hover:underline">Search</a>
+                        <a href="" class="hover:underline">To offer</a>
+                        <a href="" class="hover:underline">Move</a>
+                        <a href="" class="hover:underline">Insurance</a>
+                        <a href="" class="hover:underline">Place an Ad</a>
+                    </div>
+
+                    <div class="w-64">
+
+                    </div>
+                    <div class="p-2 flex justify-between items-center gap-4 tracking-wide text-[#fff] text-sm">
+                        <a href="" class="hover:underline hidden lg:inline-block">
+                            <p>List a Place</p>
+                        </a>
+                        <button class="border-none py-2 px-6 text-xs rounded bg-[#0957CB] text-[#fff]">
+                            Login
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <!-- end of home top navigation bar -->
+
+            <!-- Find your best cozy space section begins here -->
+            <div class="w-full flex justify-center items-center">
+                <div class="w-11/12 flex flex-col lg:flex-row lg:h-64 lg:justify-between lg:items-center mt-16 mb-8 md:mb-0 gap-8">
+                    <div class="lg:w-1/2 lg:h-64 flex justify-start">
+                        <div class="capitalize text-lg sm:text-xl md:text-2xl lg:text-3xl w-4/5 leading-relaxed text-[#fff]">
+                            <p class="font-semibold">Find Your Next Best Cozy Place</p>
+
+                            <p class="text-sm leading-relaxed py-6">
+                                Find the best places around you at the cheapest and most affordable prices.</p>
+                        </div>
+                    </div>
+                    <!-- side Image div starts here -->
+                    <div class="lg:w-1/2 h-auto flex justify-start lg:justify-end">
+                        <div class="w-full md:w-4/5 lg:w-1/2 lg:h-76 rounded bg-white">
+                            <div class="flex justify-center items-center w-full h-[15rem] lg:h-[12rem] rounded">
+                                <div class="w-11/12 h-[12rem] lg:h-[11rem] rounded">
+                                    <img src="./images/frame-2.png" alt="empty living room" class="w-full h-full object-cover rounded"/>
+                                </div>
+                                
+                            </div>
+                            <div class="w-11/12 flex justify-end">
+                                <section class="background rounded-xl">
+                                    <p class="text-[#4ABC4F] text-xs font-semibold px-1 py-1">for sale</p>
+                                </section>
+                            </div>
+
+                            <div class="w-11/12 flex justify-between items-center mx-4 mb-2">
+                                <div class="w-1/2 flex justify-between items-center">
+                                    <div class="w-8 h-8 rounded-full">
+                                        <img src="./images/Ellipse-3.png" alt="" class="w-full h-full object-cover">
+                                    </div>
+                                    <p class="text font-semibold text-[#000] p-1 text-xs">3BHK at Georgia font tower</p>
+                                </div>
+
+                                <p class="text-[#000] font-semibold p-0.5">$ 34,200</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- side div ends here -->
+                </div>
+    
+            </div>
+            <!-- Find your best cozy space section ends here -->
+
+            <!-- Home search begins here -->
+            <div class="w-full hidden md:flex justify-center items-center my-6">
+                <div class="w-11/12 h-auto flex justify-start">
+                        <div class="lg:w-3/5 rounded h-auto bg-white flex justify-center items-center mb-8">
+                            <div class="w-11/12 h-auto flex justify-between gap-2 my-2">
+                                <div class="w-4/5 h-full">
+                                    <!-- Rent, House and input search location begins here -->
+                                    <div class="flex justify-between gap-4 mx-2 mt-2">
+                                        <button class="bg-[#F4F4F4] text-[11px] font-semibold rounded-md flex justify-between items-center gap-2 px-3">
+                                             <img src="./images/dollar-sign.png" alt="" class="object-contain"/>
+                                            Rent <span class="px-1 text-[#0957CB] font-semibold">~</span>
+                                        </button>
+                                        <input type="text" placeholder="your desired location goes here" 
+                                        class="text-[11px] h-8 bg-[#F4F4F4] p-2 rounded w-72"/>
+                        
+                                        <button class="bg-[#F4F4F4] text-[11px] font-semibold rounded flex justify-between items-center gap-2 px-3">
+                                            <div class="w-3 h-3"><img src="./images/heart-home.png" alt="" class="w-full h-full object-cover"/></div>
+                                            House <span class="px-1 text-[#0957CB] font-semibold">~</span>
+                                        </button>
+                                        
+                                    </div>
+                                    <!-- ends here -->
+
+                                    <!-- Set Price range on search begins here -->
+                                    <div class="w-full flex justify-end">
+                                        <div class="w-1 h-5 bg-[#F4F4F4] rounded mx-6"></div>
+                                    </div>
+                                    <div class="flex justify-between gap-4 mx-2 mb-2">
+                                        <div>
+                                            <p class="text-[11px] font-semibold">price range</p>
+                                            <button 
+                                            class="my-1 h-8 bg-[#F4F4F4] text-[11px] text-[#0957CB] rounded flex justify-between items-center gap-2 p-2 font-semibold">
+                                               $ <span class="px-2 text-[#000]">USD</span> ~ 
+                                            </button>
+                                        </div>
+                                        
+                                        <div class="w-64 bg-white rounded-md">
+                                            <div class="w-full rounded-md mb-6">
+                                                <div class="slider">
+                                                    <div class="pro"></div>
+                                                </div>
+                                                <div class="range-in">
+                                                    <input type="range" class="range-min" min="10" max="15000" value="3000">
+                                                    <input type="range" class="range-max" min="10" max="200000" value="140000">
+                                                </div>
+                                            </div>
+                                            <div class="values">
+                                                <span id="range1">3000</span>
+                                                <span>&dash;</span>
+                                                <span id="range2">140000</span>
+                                            </div>
+                                        </div>
+
+                                            <button class="h-8 bg-[#F4F4F4] rounded-md flex justify-between items-center gap-2 px-2 py-1">
+                                                <i class="fa fa-cube fa-2xs text-[#0957CB]" aria-hidden="true"></i>
+                                                <span class="text-[11px] font-semibold">2 Rooms</span>
+                                                <span class="px-1 text-[#0957CB] font-semibold">~</span>
+                                            </button>
+                                    </div>
+                                    <!-- ends here -->
+                                </div>
+                                <!-- search button -->
+                                <div class="w-1/4 h-full flex justify-center items-center">
+                                    <div class="text-[11px]">
+                                        <p class="text-[#989898] text-center pt-8">Results</p>
+                                        <button class="bg-[#0957CB] text-white py-2 px-4 rounded-md my-2">Search</button>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                       
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+        <!-- End of home background image -->
+
+        <!-- Ebay,uber,microsoft,cisco etc links begins here -->
+        <div class="w-full h-auto bg-[#F2F2F2] flex justify-center">
+            <div class="w-1/2 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5  gap-4 my-8">
+                <a href="">
+                    <div class="w-16 h-6">
+                        <img src="./images/imgLinks/airbub.png" alt="" class="w-full h-full object-contain"/>
+                    </div>
+                </a>
+                <a href="">
+                    <div class="w-16 h-6">
+                        <img src="./images/imgLinks/cisco.png" alt="" class="w-full h-full object-contain"/>
+                    </div>
+                </a>
+                <a href="">
+                    <div class="w-12 h-4">
+                        <img src="./images/imgLinks/ebay.png" alt="" class="w-full h-full object-contain"/>
+                    </div>
+                </a>
+                <a href="">
+                    <div class="w-12 h-5">
+                        <img src="./images/imgLinks/uber.png" alt="" class="w-full h-full object-contain"/>
+                    </div>
+                </a>
+                <a href="">
+                    <div class="w-16 h-6">
+                        <img src="./images/imgLinks/microsoft.png" alt="" class="w-full h-full object-contain"/>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <!-- Ends here -->
+
+        <!-- WE are available in many well-known cities section begins here-->
+        <div class="w-full h-auto bg-white flex justify-center">
+            <div class="w-4/5 h-auto">
+                <p class="text-center text-lg md:text-xl lg:text-2xl p-6 sm:p-8 md:p-12 leading-relaxed font-semibold">We are available in many well-known cities</p>
+
+                <div class="lg:flex lg:justify-center my-8">
+                    <div class="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
+                        <div class="w-full lg:w-40 h-56 rounded-md lagos">
+                            <p class="leading-relaxed p-4 text-center text-sm">LAGOS</p>
+                        </div>
+                        <div class="w-full lg:w-40 h-56 rounded-md abuja">
+                            <p class="leading-relaxed p-4 text-center text-sm">ABUJA</p>
+                        </div>
+                        <div class="w-full lg:w-40 h-56 rounded-md enugu">
+                            <p class="leading-relaxed p-4 text-center text-sm">ENUGU</p>    
+                        </div>
+                        <div class="w-full lg:w-40 h-56 rounded-md port">
+                            <p class="leading-relaxed p-4 text-center text-sm">PORT HARCOURT</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- ends here -->
+
+        <!-- Best Real estate deals section begins here -->
+        <div class="w-full h-auto flex justify-center my-12 bg-[#FBFDFF]">
+            <div class="w-4/5 h-auto">
+                <p class="text-center text-lg md:text-xl lg:text-2xl pt-10 leading-relaxed font-semibold">Best Real Estate Deals</p>
+                <p class="text-center text-sm leading-relaxed p-2">Colonel gravity get thought fat smiling add but. Wonder twenty hunted and put income set desire expect</p>
+                 <!-- properties, responsive view -->
+
+                <div class="flex justify-center lg:hidden">
+                    <div class="w-4/5 my-4">
+                        <button id="dropdownDefault" 
+                        data-dropdown-toggle="dropdown" 
+                        class="text-white bg-blue-700 hover:bg-blue-800 font-medium rounded-lg text-xs px-4 py-2.5 text-center inline-flex items-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800" type="button">
+                        Properties <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg></button>
+                        <!-- Dropdown menu -->
+                        <div id="dropdown" class="z-10 hidden bg-white divide-y divide-gray-100 rounded shadow w-44 dark:bg-gray-700">
+                            <ul class="py-1 text-sm text-gray-700 dark:text-gray-200" aria-labelledby="dropdownDefault">
+                            <li>
+                                <p class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Residential Property</p>
+                            </li>
+                            <li>
+                                <p class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Commercial Property</p>
+                            </li>
+                            <li>
+                                <p class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Agricultural Property</p>
+                            </li>
+                            <li>
+                                <p class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Industrial Property</p>
+                            </li>
+                            <li>
+                                <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">View all properties</a>
+                            </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="w-full hidden lg:flex justify-center my-8">
+                    <div class="w-11/12 flex justify-between items-center">
+                        <div class="text-[#0957CB] p-4 border-b border-b-[#0957CB] text-xs cursor-pointer">
+                            <p>Residential Property</p>
+                        </div>
+                        <div class="p-4 text-xs cursor-pointer hover:text-[#0957CB] hover:border-b hover:border-b-[#0957CB]">
+                            <p>Commercial Property</p>
+                        </div>
+                        <div class="p-4 text-xs cursor-pointer hover:text-[#0957CB] hover:border-b hover:border-b-[#0957CB]">
+                            <p>Agricultural Property</p>
+                        </div>
+                        <div class="p-4 text-xs cursor-pointer hover:text-[#0957CB] hover:border-b hover:border-b-[#0957CB]">
+                            <p>Industrial Property</p>
+                        </div>
+
+                       <a href="">
+                            <button class="px-4 py-2 bg-[#0957CB] text-white shadow-xl rounded text-xs">
+                                View all properties
+                            </button>
+                       </a>
+                    </div>
+                </div>
+                <!-- content changes based on link clicked, different arrays to parsed here -->
+                <div class="swiper mySwiper w-full flex justify-center items-center">
+                    <div class="swiper-wrapper my-8 wrap-content overflow-hidden">
+                        <div class="swiper-slide border border-[#DCDCEB] rounded transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300 hover:border-none hover:shadow-xl">
+                            <a href="./html/pages/featuredListings.html">
+                                <div class="m-4 flex flex-col lg:flex-row lg:justify-between lg:items-center gap-2">
+                                    <div class="lg:w-2/5 lg:h-[7rem] bg-red-100 rounded">
+                                        <img src="./images/search-results/house1.png" alt="" class="rounded w-full h-full object-cover"/>
+                                    </div>
+                                    <div class="lg:w-4/5 lg:h-[7rem]">
+                                        <p class="text-xs lg:text-md font-semibold lg:px-1.5">103/143 West Street, Crows Nest</p>
+                                        <div class="flex flex-col md:flex-row md:justify-between md:items-center gap-1 capitalize text-[11px] text-[#8F90A6] p-1">
+                                            <span>10 bedroom</span>
+                                            <span>150 m</span>
+                                            <span>2 garage</span>
+                                        </div>
+                                        <div class="flex flex-col md:flex-row md:justify-between md:items-center text-[11px] gap-2 capitalize mt-2">
+                                            <p>posted by x builder</p>
+                                            <div class="bg-[#8F90A6] text-white font-semibold rounded-md p-1.5">
+                                                #45,000
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="swiper-slide border border-[#DCDCEB] rounded transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300 hover:border-none hover:shadow-xl">
+                            <a href="./html/pages/featuredListings.html">
+                                <div class="m-4 flex flex-col lg:flex-row lg:justify-between lg:items-center gap-2">
+                                    <div class="lg:w-2/5 lg:h-[7rem] bg-red-100 rounded">
+                                        <img src="./images/search-results/house.png" alt="" class="rounded w-full h-full object-cover"/>
+                                    </div>
+                                    <div class="lg:w-4/5 lg:h-[7rem]">
+                                        <p class="text-xs lg:text-md font-semibold lg:px-1.5">103/143 West Street, Crows Nest</p>
+                                        <div class="flex flex-col md:flex-row md:justify-between md:items-center gap-1 capitalize text-[11px] text-[#8F90A6] p-1">
+                                            <span>10 bedroom</span>
+                                            <span>150 m</span>
+                                            <span>2 garage</span>
+                                        </div>
+                                        <div class="flex flex-col md:flex-row md:justify-between md:items-center text-[11px] gap-2 capitalize mt-2">
+                                            <p>posted by x builder</p>
+                                            <div class="bg-[#8F90A6] text-white font-semibold rounded-md p-1.5">
+                                                #45,000
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="swiper-slide border border-[#DCDCEB] rounded transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300 hover:border-none hover:shadow-xl">
+                            <a href="./html/pages/featuredListings.html">
+                                <div class="m-4 flex flex-col lg:flex-row lg:justify-between lg:items-center gap-2">
+                                    <div class="lg:w-2/5 lg:h-[7rem] bg-red-100 rounded">
+                                        <img src="./images/search-results/house2.png" alt="" class="rounded w-full h-full object-cover"/>
+                                    </div>
+                                    <div class="lg:w-4/5 lg:h-[7rem]">
+                                        <p class="text-xs lg:text-md font-semibold lg:px-1.5">103/143 West Street, Crows Nest</p>
+                                        <div class="flex flex-col md:flex-row md:justify-between md:items-center gap-1 capitalize text-[11px] text-[#8F90A6] p-1">
+                                            <span>10 bedroom</span>
+                                            <span>150 m</span>
+                                            <span>2 garage</span>
+                                        </div>
+                                        <div class="flex flex-col md:flex-row md:justify-between md:items-center text-[11px] gap-2 capitalize mt-2">
+                                            <p>posted by x builder</p>
+                                            <div class="bg-[#8F90A6] text-white font-semibold rounded-md p-1.5">
+                                                #45,000
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                                            
+                    </div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+        </div>
+        <!-- Section ends here -->
+
+        <!-- Featured listings for the week section begins here -->
+       <div class="w-full bg-[#F1F8FF]">
+            <p class="text-center text-2xl py-10 leading-relaxed font-semibold">Featured Listing of the week</p>
+            <div class="flex justify-center items-center">
+                <div class="w-4/5 flex justify-center items-center mt-8 mb-16">
+                    <div class="w-11/12 flex flex-col md:flex-row md:justify-between md:items-center gap-8">
+                        <div class="md:w-2/5 min-h-[26rem]">
+                            <div class="w-full">
+                                <div class="w-full h-60 relative flex justify-center items-center">
+                                    <img src="./images/Image.png" alt="" class="w-full h-full object-cover"/>
+                                    <div class="w-3/5 h-56 absolute top-44">
+                                        <!-- <div class="w-full h-full bg-red-900 bg-contain overflow-hidden"> -->
+                                            <img src="./images/img1.png" alt="" class="w-full h-full object-cover"/>
+                                        <!-- </div> -->
+                                    </div>
+                                </div>
+                            </div>
+                            
+                        </div>
+                        <div class="md:w-3/5 min-h-[26rem]">
+                            <div class="md:w-4/5 ml-8">
+                                <p class="font-semibold sm:text-lg md:text-xl py-4 leading-relaxed">The and collecting for the motionless difficulty son.</p>
+
+                                <p class="text-xs font-light">Conveying or northward offending admitting perfectly my. Colonel gravity get thought fat smiling add but difficult situations.</p>
+
+                                <div class="flex justify-between items-content gap-2 mt-8">
+                                    <div class="text-xs">
+                                        <p class="font-semibold">Budget</p>
+                                        <p class="font-light py-2">confidential</p>
+                                    </div>
+                                    <div class="text-xs">
+                                        <p class="font-semibold">Size</p>
+                                        <p class="font-light py-2">1200 m2</p>
+                                    </div>
+                                    <div class="text-xs">
+                                        <p class="font-semibold">Type</p>
+                                        <p class="font-light py-2">office</p>
+                                    </div>
+                                </div>
+
+                                <div class="flex justify-between items-content gap-4 mt-8">
+                                    <div class="text-xs">
+                                        <p class="font-semibold">Status</p>
+                                        <p class="font-light py-2">Done</p>
+                                    </div>
+                                    <div class="text-xs">
+                                        <p class="font-semibold">Location</p>
+                                        <p class="font-light py-2">Switzerland</p>
+                                    </div>
+                                    <div class="text-xs">
+                                        <p class="font-semibold">Flat</p>
+                                        <p class="font-light py-2">8 room</p>
+                                    </div>
+                                </div>
+
+                                <div class="w-full flex justify-center my-2">
+                                    <button class="w-4/5 py-3 px-5 text-xs text-[#fff] border-none hover:shadow-xl bg-[#0957CB] rounded m-4">
+                                        Yes I want book "office package" 
+                                    </button>
+                                </div>
+                            </div>
+                        </div>  
+
+                    </div>
+                </div>
+            
+            </div>
+            <!-- design here -->
+       </div>
+       <!-- end of section -->
+
+       <!-- Loved by business and individuals section begins here -->
+       <div class="w-full bg-white">
+        <div class="w-full flex justify-center">
+            <div class="w-4/5">
+                <p class="text-center text-md sm:text-xl md:text-2xl font-semibold py-10 leading-relaxed">Loved by business and individuals across the globe.</p>
+            </div>
+        </div>
+        <div class="flex justify-center">
+             <div class="w-4/5 flex justify-center">
+                    <div class="w-11/12 grid md:grid-cols-2 lg:grid-cols-3 gap-2 my-6 leading-relaxed">
+                        <div class="w-full md:w-[17rem] h-68 rounded-lg border border-[#E5E5E5] cursor-pointer transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300 hover:border-none hover:shadow-xl">
+                            <div class="w-full flex justify-start">
+                                <div class="flex justify-between items-center m-4">
+                                    <i class="fa fa-star text-[#FBB040]" aria-hidden="true"></i>
+                                    <i class="fa fa-star text-[#FBB040]" aria-hidden="true"></i>
+                                    <i class="fa fa-star text-[#FBB040]" aria-hidden="true"></i>
+                                    <i class="fa fa-star text-[#FBB040]" aria-hidden="true"></i>
+                                    <i class="fa fa-star text-[#FBB040]" aria-hidden="true"></i>
+                                </div>
+                         </div>
+                         <div class="w-full p-4 leading-relaxed text-sm">
+                             <p>Moderate children at of outweigh it. Unsatiable it considered invitation he travelling insensible. Consulted admitting oh mr up as described.</p>
+                         </div>
+                         <div class="w-fit flex justify-between items-center">
+                             <div class="w-10 h-10 rounded-full m-4">
+                                 <img src="../../images/Ellipse-3.png" alt="" class="w-full h-full object-cover">
+                             </div>
+                             <div>
+                                 <p class="font-semibold text-[#000] text-xs">Emma frank</p>
+                                 <p class="text-xs text-[#666666]">New york city</p>
+                             </div>
+                         </div>
+                     </div>
+                    <div class="w-full md:w-[17rem] h-68 rounded-lg border border-[#E5E5E5] transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300 cursor-pointer hover:border-none hover:shadow-xl">
+                        <div class="w-full flex justify-start">
+                            <div class="flex justify-between items-center m-4">
+                                <i class="fa fa-star text-[#FBB040]" aria-hidden="true"></i>
+                                <i class="fa fa-star text-[#FBB040]" aria-hidden="true"></i>
+                                <i class="fa fa-star text-[#FBB040]" aria-hidden="true"></i>
+                                <i class="fa fa-star text-[#FBB040]" aria-hidden="true"></i>
+                                <i class="fa fa-star text-[#FBB040]" aria-hidden="true"></i>
+                            </div>
+                        </div>
+                        <div class="w-full p-4 leading-relaxed text-sm">
+                            <p>Moderate children at of outweigh it. Unsatiable it considered invitation he travelling insensible. Consulted admitting oh mr up as described.</p>
+                        </div>
+                        <div class="w-fit flex justify-between items-center">
+                            <div class="w-10 h-10 rounded-full m-4">
+                                <img src="../../images/Ellipse-3.png" alt="" class="w-full h-full object-cover">
+                            </div>
+                            <div>
+                                <p class="font-semibold text-[#000] text-xs">Emma frank</p>
+                                <p class="text-xs text-[#666666]">New york city</p>
+                            </div>
+                        </div>
+                     </div>
+                     <div class="w-full md:w-[17rem] h-68 rounded-lg border border-[#E5E5E5] cursor-pointer transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300 hover:border-none hover:shadow-xl">
+                         <div class="w-full flex justify-start">
+                             <div class="flex justify-between items-center m-4">
+                                <i class="fa fa-star text-[#FBB040]" aria-hidden="true"></i>
+                                <i class="fa fa-star text-[#FBB040]" aria-hidden="true"></i>
+                                <i class="fa fa-star text-[#FBB040]" aria-hidden="true"></i>
+                                <i class="fa fa-star text-[#FBB040]" aria-hidden="true"></i>
+                                <i class="fa fa-star text-[#FBB040]" aria-hidden="true"></i>
+                             </div>
+                         </div>
+                         <div class="w-full p-4 leading-relaxed text-sm">
+                             <p>Moderate children at of outweigh it. Unsatiable it considered invitation he travelling insensible. Consulted admitting oh mr up as described.</p>
+                         </div>
+                         <div class="w-fit flex justify-between items-center">
+                             <div class="w-10 h-10 rounded-full m-4">
+                                 <img src="../../images/Ellipse-3.png" alt="" class="w-full h-full object-cover">
+                             </div>
+                             <div>
+                                 <p class="font-semibold text-[#000] text-xs">Emma frank</p>
+                                 <p class="text-xs text-[#666666]">New york city</p>
+                             </div>
+                         </div>
+
+                     </div>
+                 </div>
+             </div>
+
+        </div>
+        <!-- design here -->
+    </div>
+       <!-- End of Section -->
+
+       <!-- Top Areas Section begins here -->
+       <div class="w-full bg-[#EBEBEB] flex justify-center mt-12">
+           <div class="w-4/5 flex justify-center items-center">
+                <div class="w-11/12">
+                    <div class="w-full flex justify-items-start">
+                        <p class="capitalize py-10 text-lg sm:text-xl font-semibold">Top Areas</p>
+                    </div>
+                    <div class="w-full grid grid-flow-col auto-cols-auto gap-4 my-6 leading-relaxed">
+                        <div class="w-fit text-sm capitalize">
+                            <p class="font-semibold px-2 py-4">lagos</p>
+                            <p class="p-2">Ikoyi</p>
+                            <p class="p-2">lekki</p>
+                            <p class="p-2">Egbeda</p>
+                            <p class="p-2">ikeja</p>
+                            <p class="p-2">mile-12</p>
+                        </div>
+                        <div class="w-fit text-sm capitalize">
+                            <p class="font-semibold px-2 py-4">Abuja</p>
+                            <p class="p-2">Ikoyi</p>
+                            <p class="p-2">lekki</p>
+                            <p class="p-2">Egbeda</p>
+                            <p class="p-2">ikeja</p>
+                            <p class="p-2">mile-12</p>
+
+                        </div>
+                        <div class="w-fit text-sm capitalize">
+                            <p class="font-semibold px-2 py-4">port harcourt</p>
+                            <p class="p-2">Ikoyi</p>
+                            <p class="p-2">lekki</p>
+                            <p class="p-2">Egbeda</p>
+                            <p class="p-2">ikeja</p>
+                            <p class="p-2">mile-12</p>
+                        </div>
+                    </div>
+                </div>
+           </div>
+       </div>
+       <!-- End of section  -->
+
+       <!-- Footer begins here -->
+       <div class="">
+        <div class="w-full bg-gradient-to-b from-[#EBEBEB] to-[#FFFFFF] flex justify-center items-center">
+            <div class="w-4/5 mt-28 flex justify-center items-center">
+                <div class="w-11/12">
+                    <div class="w-full flex flex-col md:flex-row md:justify-between gap-4">
+                        <div class="leading-relaxed my-4 md:my-0">
+                            <p class="text-2xl lg:text-3xl font-semibold py-2">Get our newsletter</p>
+                            <p class="text-[#666666] text-sm">To join the worldwide community.</p>
+                        </div>
+                        <div class="md:w-[22rem] lg:w-[30rem] bg-white cursor-pointer shadow-xl rounded">
+                            <form action="" class="my-3 mx-3">
+                                <!-- <div class=" my-2"> -->
+                                    <input type="email" placeholder="Type your email address" class="p-4 w-4/5 md:w-[13rem] lg:w-4/5 rounded text-xs"/>
+                                <!-- </div> -->
+                                <input type="submit" value="Send now" class="text-white text-xs bg-[#0957CB] p-3 rounded">
+                            </form>
+                        </div>
+                    </div>
+                    <div class="w-full flex justify-center items-center">
+                        <div class="w-3/5 h-px bg-[#DEDFE1] mt-20">
+
+                        </div>
+                    </div>
+                    <div class="w-full flex justify-between items-center mt-12">
+                        <div class="w-auto">
+                        <p class="capitallize text-lg sm:text-lg lg:text-xl font-semibold tracking-wide">Abel's Space</p>
+                        </div>
+
+                        <div class="hidden md:flex">
+                            <div class="p-2 flex justify-between items-center gap-4 tracking-wide text-[#000] md:text-xs lg:text-sm">
+                                <a href="" class="hover:underline">Home</a>
+                                <a href="" class="hover:underline">About</a>
+                                <a href="" class="hover:underline">Service</a>
+                                <a href="" class="hover:underline">portfolio</a>
+                                <a href="" class="hover:underline">Blog</a>
+                                <a href="./contact.html" class="hover:underline">Contact</a>
+                            </div>
+                        </div>
+                        <div class="w-3/5 md:w-fit flex justify-center">
+                            <div class="w-full p-2 flex justify-between items-center text-[#000] text-sm gap-4">
+                                <a href="">
+                                    <i class="fa fa-facebook" aria-hidden="true"></i>
+                                </a>
+                                <a href="">
+                                    <i class="fa fa-instagram" aria-hidden="true"></i>
+                                </a>
+                                <a href="">
+                                    <i class="fa fa-twitter" aria-hidden="true"></i>
+                                </a>
+                                <a href="">
+                                    <i class="fa fa-linkedin" aria-hidden="true"></i>
+                                </a>
+                            <div> 
+                        </div>
+                    <!-- responsive footer dropdown -->
+                    <div class="dropdown">
+                        <div id="myDropdown" class="dropdown-content bg-gradient-to-b from-[#EBEBEB] to-[#FFFFFF] rounded shadow">
+                            <a href="" class="">Home</a>
+                            <a href="" class="">About</a>
+                            <a href="" class="">Service</a>
+                            <a href="" class="">portfolio</a>
+                            <a href="" class="">Blog</a>
+                            <a href="./html/pages/contact.html" class="hover:underline">Contact</a>
+                        </div>
+                        <button onclick="dropDownFunction()" class="dropbtn md:hidden">
+                            <i class="fa fa-ellipsis-v fa-lg" aria-hidden="true"></i>
+                        </button>
+                    </div>    
+                </div>
+            </div>
+        </div>
+        <p class="text-center p-8 capitalize font-semibold text-xs text-[#000]">
+            Copyright <i class="fa fa-copyright" aria-hidden="true"></i> 2022. all rights reserved
+        </p>
+    </div>
+        <!-- End of footer -->
+    </div>
+    </div>
+    </div>
+    <script src="./js/script.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script>
+        // group slider function
+        function openDropDownFunction(){
+            var elementStyle  = document.getElementById('navBar').style;
+            elementStyle.width = '100%';
+            elementStyle.height="50%";
+            elementStyle.background = "blue";
+        }
+        var swiper = new Swiper(".mySwiper", {
+            slidesPerView: 3,
+            spaceBetween: 30,
+            slidesPerGroup: 3,
+            loop: true,
+            loopFillGroupWithBlank: true,
+            pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+            },
+            navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+            },
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/dist/output.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+    <title>Log in</title>
+</head>
+<body class="overflow-x-hidden">
+    <div class="w-full h-[105vh] flex md:justify-between justify-center md:items-center">
+        <div class="w-0 h-0 md:w-1/2 lg:w-4/6 md:h-full">
+            <img src="../../images/unsplash.png" alt="a bustling city" class="w-full h-full object-cover"/>
+        </div>
+        <div class="bg-white w-4/5 md:w-1/2 lg:w-2/6 h-full flex justify-center">
+            <div class="w-9/12 h-auto">
+                <div class="w-full">
+                    <p style="font-family: 'Great Vibes', cursive;" 
+                    class="text-2xl text-[#0957CB] text-center py-10 font-semibold">AS</p>
+                </div>
+                <div class="flex justify-start w-full">
+                    <p class="text-lg font-semibold text-[#0957CB] text-center">Login</p>
+                </div>
+                <form action="">
+                    <div class="block my-6">
+                        <label for="email" class="text-black text-xs py-2">Email address</label>
+                        <input type="text" id="email" placeholder="Email or phone Number"
+                         class="border border-[#EEEEEE] p-2.5 rounded w-full text-xs"/>
+                    </div>
+                    <div class="block">
+                        <label for="password" class="text-black text-xs py-2">Password</label>
+                        <input type="password" id="password" placeholder="Password"
+                        class="border border-[#EEEEEE] p-2.5 rounded w-full text-xs"/>
+                    </div>
+                   <a href="">
+                    <div class="flex justify-end text-[#0957CB] hover:underline">
+                        <p class="font-semibold text-xs p-2">Forgot Password</p>
+                    </div>
+                   </a>
+                   <input type="submit" value="Sign In" 
+                   class="my-6 bg-[#0957CB] p-2 rounded w-full text-[#fff]"/>
+                </form>
+                <div class="flex justify-center items-center">
+                    <div class="w-11/12 h-px bg-[#EEEEEE]">
+                    </div>
+                </div>
+                <!-- replace buttons with google login and facebook login buttons -->
+                <div class="flex justify-between items-center gap-4 my-8">
+                    <button class="w-1/2 bg-black text-white p-2 rounded border-none">
+                        google
+                    </button>
+                    <button class="w-1/2 bg-[#0957CB] text-white p-2 rounded border-none">
+                        facebook
+                    </button>
+                </div>
+                <p class="text-xs text-center font-semibold">Don't have an account? <a href="./sign-up-page.html">
+                   <span class="text-[#0957CB] font-semibold"> sign up now</span>
+                </a></p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

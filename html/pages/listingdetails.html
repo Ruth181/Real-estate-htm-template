@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka&family=Kanit:wght@300&family=Poppins:wght@300&family=Titillium+Web:wght@300&display=swap" rel="stylesheet">
+    <link href="/dist/output.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../../styles.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+    <title>listings</title>
+</head>
+<body class="font-family">
+    <!-- Listing details page -->
+    <div class="w-full h-auto overflow-x-hidden">
+        <!-- phone number at the top -->
+        <div class="relative w-full h-auto hidden lg:flex justify-end bg-[#0042A4] ">
+            <section class="flex justify-between items-center p-4 text-[#fff] text-[11px] gap-4 mx-10">
+                <div class="flex justify-between items-center gap-2">
+                    <div class="w-3 h-3">
+                        <img src="../../images/phone-icon.png" alt="" class="w-full h-full"/>
+                    </div>
+                    <p class="font-semibold">+14 312-423-523</p>
+                </div>
+                <p class="font-semibold">+14 312-423-523</p>
+            </section>
+        </div>
+        <!-- Navigation begins here -->
+        <div class="w-full h-auto flex justify-center items-center bg-[#0957CB] sticky top-0">
+            <div class="w-11/12 h-auto flex justify-between items-center my-2">
+                <div class="lg:hidden text-white m-4 cursor-pointer hover:-translate-y-1 hover:scale-110 duration-700">
+                        <i class="fa fa-bars fa-lg" aria-hidden="true"></i>
+                    </div>
+                <div class="p-2 font-semibold text-xl tracking-wide text-[#fff] hidden lg:inline-block">
+                    <span>Abel&#39;s Space</span>
+                </div>
+                <div class="p-2 hidden lg:flex justify-between items-center gap-4 tracking-wide text-[#fff] text-sm">
+                    <a href="./search.html" class="hover:underline">Search</a>
+                    <a href="" class="hover:underline">To offer</a>
+                    <a href="" class="hover:underline">Sell</a>
+                    <a href="" class="hover:underline">Rent</a>
+                    <a href="" class="hover:underline">Place an Ad</a>
+                </div>
+    
+                <div class="40"></div>
+                <div class="p-2 hidden lg:flex justify-between items-center gap-4 tracking-wide text-[#fff] text-sm">
+                    <a href="" class="hover:underline">
+                        <p>List a Place</p>
+                    </a>
+                    <button class="border-none py-2 px-6 text-xs rounded bg-[#0957CB] text-[#fff]">
+                        Login
+                    </button>
+                </div>
+            </div>
+        </div>   
+        <!-- End of navigation -->
+        <!-- search after navigation bar starts here -->
+        <div class="w-full h-16 bg-[#F1F8FF] flex justify-center items-center">
+            <div class="w-11/12 h-12 flex lg:justify-between justify-center items-center gap-4">
+                <div class="w-full lg:w-9/12 bg-white flex justify-start items-center gap-1 px-2 border border-[#96B6FB] cursor-pointer">
+                    <i class="fa fa-search text-[#2C6CF6]" aria-hidden="true"></i>
+                    <input type="search" placeholder="search by name address or zip" class="rounded w-full p-2 text-[11px]"/>
+                </div>
+    
+                <div class="hidden lg:inline-block text-[#A5B1BC] text-[10px] border border-[#96B6FB] px-3 py-2 font-semibold cursor-pointer">
+                    <span>Advanced Filters</span>
+                </div>
+                <!-- <div class="w-80 h-6 flex justify-end"> -->
+                    <div class="hidden lg:flex justify-between items-center gap-3">
+                        <i class="fa fa-bell-o text-[#96B6FB] cursor-pointer" aria-hidden="true"></i>
+                    <p class="text-[11px] text-[#96B6FB] font-semibold">Alfonso Batosh</p>
+                    <div class="w-8 h-8 rounded-full">
+                        <img src="../../images/unsplash.png" alt="" class="w-full h-full rounded-full object-cover">
+                    </div>
+                    </div>
+                <!-- </div> -->
+            </div>
+        </div>
+    
+        <!-- end of search scope -->
+
+        <!-- listing details begins here -->
+        <div class="w-full h-auto flex justify-center items-center">
+            <div class="w-11/12 h-auto my-8 flex flex-col lg:flex-row lg:justify-between lg:items-center gap-4">
+                <div class="w-full lg:w-1/2 h-[42rem] flex justify-start">
+                    <div class="w-full lg:w-11/12 h-full scrollable-div overflow-y-scroll flex justify-start">
+                        <div class="w-11/12 h-auto my-2">
+                            <a href="./search.html">
+                                <button class="border border-[#E5E5E5] text-[#3E4958] capitalize text-[11px] py-1.5 px-2 ">
+                                    <span class="font-semibold">&lt</span> back to search
+                                </button>
+                            </a>
+                            <p class="py-2 text-lg font-semibold capitalize text-[#3E4958]">Properties for rent in abuja</p>
+                            <div class="flex justify-between items-center mt-4 gap-4">
+                                <p class="text-base md:text-lg capitalize font-semibold">Classic studio apartment</p>
+                                <div class="flex justify-between items-center gap-2 mx-6">
+                                    <div class="w-6 h-6 rounded-full bg-[#5E81F4] flex justify-center items-center">
+                                        <div class="w-5 h-5">
+                                            <img src="../../images/search-results/share.png" alt="" class="w-full h-full object-contain"/>
+                                        </div>
+                                    </div>
+                                    <p class="capitalize text-[12px] text-[#3E4958] font-semibold">Share with super agent</p>
+                                </div>
+                            </div>
+                            <div class="w-16 h-1 rounded my-2" style="background-color: rgba(113, 137, 214, 0.1);"></div>
+
+                            <div class="flex justify-between items-center">
+                                <p class="text-[#3E4958] text-xs font-semibold">Abuja, Nigeria</p>
+                                <div class="flex justify-between items-center gap-2 mx-6">
+                                    <p class="text-[#3E4958] text-[11px]"> <i class="fa fa-star text-[#FBB040]" aria-hidden="true"></i> 4.8</p>
+                                    <button class="border border-[#DEDEDE] rounded p-1">
+                                        <img src="../../images/search-results/by.png" alt="" srcset="">
+                                    </button>
+                                    <button class="border border-[#DEDEDE] rounded p-1.5">
+                                        <img src="../../images/search-results/heart.png" alt="" srcset="">
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="grid grid-cols-4 w-auto h-12 rounded-lg my-6 border border-[#DEDEDE] mr-6 flex justify-between items-center">
+                                <div class="h-full border border-r[#DEDEDE]">
+                                    <p class="capitalize py-1 px-2 text-[#999999] text-[9px]">property type</p>
+                                    <p class="text-[10px] font-semibold px-2">New</p>
+                                </div>
+                                <div class="h-full border border-r[#DEDEDE]">
+                                    <p class="capitalize p-1 text-[#999999] text-[9px]">property features</p>
+                                    <div></div>
+                                </div>
+                                <div class="h-full border border-r[#DEDEDE]">
+                                    <p class="capitalize p-1 text-[#999999] text-[9px]">Total area</p>
+                                    <p class="text-[10px] font-semibold p-1">1123SqFt</p>
+                                </div>
+                                <div class="h-full border border-r[#DEDEDE]">
+                                    <p class="capitalize p-1 text-[#999999] text-[9px]">Rent price</p>
+                                    <p class="text-[10px] font-semibold p-1">3,500 AED monthly</p>
+                                </div>
+                            </div>
+                            <!-- Description -->
+                            <div class="p-1 text-xs w-4/5">
+                                <p class="font-semibold py-1.5">Description</p>
+                                <p class="text-[#3E4958] leading-relaxed pb-3">
+                                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                                </p>
+                                <a href="./description.html" class="hover:underline text-[#0957CB] font-semibold">
+                                    Read more
+                                </a>
+                            </div>
+                            <!-- realtor Info -->
+                            <div class="w-fit flex justify-between items-center gap-2 my-8">
+                                <div class="w-12 h-12 rounded-full">
+                                    <img src="../../images/Ellipse-3.png" alt="" class="rounded-full w-full h-full object-cover">
+                                </div>
+                                <div class="">
+                                    <div class="flex justify-between items-center gap-8">
+                                        <p class="text-[11px] font-semibold">Rashid Samuel</p>
+                                        <div class="w-4 h-4">
+                                            <img src="../../images/search-results/realtor-logo.png" alt="" class="w-full h-full object-contain"/>
+                                        </div>
+                                    </div>
+                                    <div class="flex justify-between items-center gap-2 my-2">
+                                        <button class="py-0.5 px-1.5 text-[11px] text-[#0957CB] border border-[#0957CB] rounded-lg
+                                        hover:bg-[#0957CB] hover:text-white">
+                                            <i class="fa fa-phone" aria-hidden="true"></i>
+                                            Call
+                                        </button>
+                                        <button class="py-0.5 px-1.5 text-[11px] text-[#0957CB] border border-[#0957CB] rounded-lg
+                                        hover:bg-[#0957CB] hover:text-white">
+                                        <i class="fa fa-paper-plane" aria-hidden="true"></i>
+                                            Text
+                                        </button>
+                                        <button class="py-0.5 px-1.5 text-[11px] text-[#0957CB] border border-[#0957CB] rounded-lg
+                                        hover:bg-[#0957CB] hover:text-white">
+                                            <i class="fa fa-envelope-o" aria-hidden="true"></i>
+                                            Mail
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- features and amenities -->
+                            <div class="w-auto h-auto">
+                                <p class="capitalize text-xs text-[#0957CB] font-semibold px-1 py-4">Features and amenities</p>
+                                <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4">
+                                    <div class="bg-[#E8F0FC] rounded-md w-auto h-16 bottom-0">
+                                        <p class="text-[#0957CB] font-semibold text-[9px] p-1.5">Balcony or Terrace</p>
+                                    </div>
+                                    <div class="bg-[#E8F0FC] rounded-md w-auto h-16 bottom-0">
+                                        <p class="text-[#0957CB] font-semibold text-[9px] p-1.5">Balcony or Terrace</p>
+                                    </div>
+                                    <div class="bg-[#E8F0FC] rounded-md w-auto h-16 bottom-0">
+                                        <p class="text-[#0957CB] font-semibold text-[9px] p-1.5">Balcony or Terrace</p>
+                                    </div>
+                                    <div class="bg-[#E8F0FC] rounded-md w-auto h-16 bottom-0">
+                                        <p class="text-[#0957CB] font-semibold text-[9px] p-1.5">Balcony or Terrace</p>
+                                    </div>
+                                    <div class="bg-[#E8F0FC] rounded-md w-auto h-16 bottom-0">
+                                        <p class="text-[#0957CB] font-semibold text-[9px] p-1.5">Balcony or Terrace</p>
+                                    </div>
+                                    <!-- second row -->
+                                    <div class="bg-[#E8F0FC] rounded-md w-auto h-16 bottom-0">
+                                        <p class="text-[#0957CB] font-semibold text-[9px] p-1.5">Balcony or Terrace</p>
+                                    </div>
+                                    <div class="bg-[#E8F0FC] rounded-md w-auto h-16 bottom-0">
+                                        <p class="text-[#0957CB] font-semibold text-[9px] p-1.5">Balcony or Terrace</p>
+                                    </div>
+                                    <div class="bg-[#E8F0FC] rounded-md w-auto h-16 bottom-0">
+                                        <p class="text-[#0957CB] font-semibold text-[9px] p-1.5">Balcony or Terrace</p>
+                                    </div>
+                                    <div class="bg-[#E8F0FC] rounded-md w-auto h-16 bottom-0">
+                                        <p class="text-[#0957CB] font-semibold text-[9px] p-1.5">Balcony or Terrace</p>
+                                    </div>
+                                    <div class="bg-[#E8F0FC] rounded-md w-auto h-16 bottom-0">
+                                        <p class="text-[#0957CB] font-semibold text-[9px] p-1.5">Balcony or Terrace</p>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                            <div class="w-auto h-auto">
+                                <p class="capitalize text-xs text-[#0957CB] font-semibold px-1 py-4">Location Nearby</p>
+                                <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4">
+                                    <div class="bg-[#E8F0FC] rounded-md w-auto h-16 bottom-0">
+                                        <p class="text-[#0957CB] font-semibold text-[9px] p-1.5">Balcony or Terrace</p>
+                                    </div>
+                                    <div class="bg-[#E8F0FC] rounded-md w-auto h-16 bottom-0">
+                                        <p class="text-[#0957CB] font-semibold text-[9px] p-1.5">Balcony or Terrace</p>
+                                    </div>
+                                    <div class="bg-[#E8F0FC] rounded-md w-auto h-16 bottom-0">
+                                        <p class="text-[#0957CB] font-semibold text-[9px] p-1.5">Balcony or Terrace</p>
+                                    </div>
+                                    <div class="bg-[#E8F0FC] rounded-md w-auto h-16 bottom-0">
+                                        <p class="text-[#0957CB] font-semibold text-[9px] p-1.5">Balcony or Terrace</p>
+                                    </div>
+                                    <div class="bg-[#E8F0FC] rounded-md w-auto h-16 bottom-0">
+                                        <p class="text-[#0957CB] font-semibold text-[9px] p-1.5">Balcony or Terrace</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+
+                   
+                </div>
+                <div class="w-11/12 lg:w-1/2 h-[43rem]">
+                    <p class="py-2 text-lg px-4 font-semibold capitalize text-[#3E4958]">Photos and map of the property</p>
+                    <div class="w-full m-4 h-[21rem] bg-green-100 rounded-md">
+                        <!-- slider -->
+                        <span>slider here</span>
+                    </div>
+                    <div class="w-full m-4 h-[20rem] rounded-md">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1009058.2639950551!2d6.691469669291524!3d8.913590745836654!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x104e6157ce3eeda9%3A0x32af1c368be32dfc!2sFederal%20Capital%20Territory!5e0!3m2!1sen!2sng!4v1653069476266!5m2!1sen!2sng"
+                        width="100%" height="100%" style="border:0;" allowfullscreen=""
+                       loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <!-- loved by businesses and individuals -->
+        <div class="w-full bg-white my-12">
+            <div class="w-full flex justify-center">
+                <div class="w-11/12">
+                    <p class="text-center text-md sm:text-xl md:text-2xl font-semibold py-10 leading-relaxed">Loved by business and individuals across the globe.</p>
+                </div>
+            </div>
+            <div class="flex justify-center">
+                 <div class="w-11/12 flex justify-center">
+                        <div class="w-11/12 grid md:grid-cols-2 lg:grid-cols-3 gap-2 my-6 leading-relaxed">
+                            <div class="w-full md:w-[17rem] h-68 rounded-lg border border-[#E5E5E5] cursor-pointer transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300 hover:border-none hover:shadow-xl">
+                                <div class="w-full flex justify-start">
+                                    <div class="flex justify-between items-center m-4">
+                                        <i class="fa fa-star text-[#FBB040]" aria-hidden="true"></i>
+                                        <i class="fa fa-star text-[#FBB040]" aria-hidden="true"></i>
+                                        <i class="fa fa-star text-[#FBB040]" aria-hidden="true"></i>
+                                        <i class="fa fa-star text-[#FBB040]" aria-hidden="true"></i>
+                                        <i class="fa fa-star text-[#FBB040]" aria-hidden="true"></i>
+                                    </div>
+                             </div>
+                             <div class="w-full p-4 leading-relaxed text-sm">
+                                 <p>Moderate children at of outweigh it. Unsatiable it considered invitation he travelling insensible. Consulted admitting oh mr up as described.</p>
+                             </div>
+                             <div class="w-fit flex justify-between items-center">
+                                 <div class="w-10 h-10 rounded-full m-4">
+                                     <img src="../../images/Ellipse-3.png" alt="" class="w-full h-full object-cover">
+                                 </div>
+                                 <div>
+                                     <p class="font-semibold text-[#000] text-xs">Emma frank</p>
+                                     <p class="text-xs text-[#666666]">New york city</p>
+                                 </div>
+                             </div>
+                         </div>
+                        <div class="w-full md:w-[17rem] h-68 rounded-lg border border-[#E5E5E5] transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300 cursor-pointer hover:border-none hover:shadow-xl">
+                            <div class="w-full flex justify-start">
+                                <div class="flex justify-between items-center m-4">
+                                    <i class="fa fa-star text-[#FBB040]" aria-hidden="true"></i>
+                                    <i class="fa fa-star text-[#FBB040]" aria-hidden="true"></i>
+                                    <i class="fa fa-star text-[#FBB040]" aria-hidden="true"></i>
+                                    <i class="fa fa-star text-[#FBB040]" aria-hidden="true"></i>
+                                    <i class="fa fa-star text-[#FBB040]" aria-hidden="true"></i>
+                                </div>
+                            </div>
+                            <div class="w-full p-4 leading-relaxed text-sm">
+                                <p>Moderate children at of outweigh it. Unsatiable it considered invitation he travelling insensible. Consulted admitting oh mr up as described.</p>
+                            </div>
+                            <div class="w-fit flex justify-between items-center">
+                                <div class="w-10 h-10 rounded-full m-4">
+                                    <img src="../../images/Ellipse-3.png" alt="" class="w-full h-full object-cover">
+                                </div>
+                                <div>
+                                    <p class="font-semibold text-[#000] text-xs">Emma frank</p>
+                                    <p class="text-xs text-[#666666]">New york city</p>
+                                </div>
+                            </div>
+                         </div>
+                         <div class="w-full md:w-[17rem] h-68 rounded-lg border border-[#E5E5E5] cursor-pointer transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300 hover:border-none hover:shadow-xl">
+                             <div class="w-full flex justify-start">
+                                 <div class="flex justify-between items-center m-4">
+                                    <i class="fa fa-star text-[#FBB040]" aria-hidden="true"></i>
+                                    <i class="fa fa-star text-[#FBB040]" aria-hidden="true"></i>
+                                    <i class="fa fa-star text-[#FBB040]" aria-hidden="true"></i>
+                                    <i class="fa fa-star text-[#FBB040]" aria-hidden="true"></i>
+                                    <i class="fa fa-star text-[#FBB040]" aria-hidden="true"></i>
+                                 </div>
+                             </div>
+                             <div class="w-full p-4 leading-relaxed text-sm">
+                                 <p>Moderate children at of outweigh it. Unsatiable it considered invitation he travelling insensible. Consulted admitting oh mr up as described.</p>
+                             </div>
+                             <div class="w-fit flex justify-between items-center">
+                                 <div class="w-10 h-10 rounded-full m-4">
+                                     <img src="../../images/Ellipse-3.png" alt="" class="w-full h-full object-cover">
+                                 </div>
+                                 <div>
+                                     <p class="font-semibold text-[#000] text-xs">Emma frank</p>
+                                     <p class="text-xs text-[#666666]">New york city</p>
+                                 </div>
+                             </div>
+    
+                         </div>
+                     </div>
+                 </div>
+    
+            </div>
+            <!-- design here -->
+        </div>
+        <!-- Top areas -->
+        <div class="w-full flex justify-center">
+            <div class="w-full bg-[#EBEBEB] flex justify-center mt-12">
+                <div class="w-11/12 flex justify-center items-center">
+                     <div class="w-11/12">
+                         <div class="w-full flex justify-items-start">
+                             <p class="capitalize py-10 text-xl font-semibold">Top Areas</p>
+                         </div>
+                         <div class="w-full grid grid-flow-col auto-cols-auto gap-4 my-6 leading-relaxed">
+                             <div class="w-fit text-sm capitalize">
+                                 <p class="font-semibold px-2 py-4">lagos</p>
+                                 <p class="p-2">Ikoyi</p>
+                                 <p class="p-2">lekki</p>
+                                 <p class="p-2">Egbeda</p>
+                                 <p class="p-2">ikeja</p>
+                                 <p class="p-2">mile-12</p>
+                             </div>
+                             <div class="w-fit text-sm capitalize">
+                                 <p class="font-semibold px-2 py-4">Abuja</p>
+                                 <p class="p-2">Ikoyi</p>
+                                 <p class="p-2">lekki</p>
+                                 <p class="p-2">Egbeda</p>
+                                 <p class="p-2">ikeja</p>
+                                 <p class="p-2">mile-12</p>
+        
+                             </div>
+                             <div class="w-fit text-sm capitalize">
+                                 <p class="font-semibold px-2 py-4">port harcourt</p>
+                                 <p class="p-2">Ikoyi</p>
+                                 <p class="p-2">lekki</p>
+                                 <p class="p-2">Egbeda</p>
+                                 <p class="p-2">ikeja</p>
+                                 <p class="p-2">mile-12</p>
+                             </div>
+                         </div>
+                     </div>
+                </div>
+            </div>
+        </div>
+        <!-- End of Top areas section -->
+
+        <!-- footer area -->
+        <div class="">
+            <div class="w-full bg-gradient-to-b from-[#EBEBEB] to-[#FFFFFF] flex justify-center items-center">
+                <div class="w-11/12 mt-28 flex justify-center items-center">
+                    <div class="w-11/12">
+                        <div class="w-full flex flex-col md:flex-row md:justify-between gap-4">
+                            <div class="leading-relaxed my-4 md:my-0">
+                                <p class="text-2xl lg:text-3xl font-semibold py-2">Get our newsletter</p>
+                                <p class="text-[#666666] text-sm">To join the worldwide community.</p>
+                            </div>
+                            <div class="md:w-[22rem] lg:w-[30rem] bg-white cursor-pointer shadow-xl rounded">
+                                <form action="" class="my-3 mx-3">
+                                    <!-- <div class=" my-2"> -->
+                                        <input type="email" placeholder="Type your email address" class="p-4 w-4/5 md:w-[13rem] lg:w-4/5 rounded text-xs"/>
+                                    <!-- </div> -->
+                                    <input type="submit" value="Send now" class="text-white text-xs bg-[#0957CB] p-3 rounded">
+                                </form>
+                            </div>
+                        </div>
+                        <div class="w-full flex justify-center items-center">
+                            <div class="w-3/5 h-px bg-[#DEDFE1] mt-20">
+    
+                            </div>
+                        </div>
+                        <div class="w-full flex justify-between items-center mt-12">
+                            <div class="w-auto">
+                            <p class="capitallize text-lg sm:text-lg lg:text-xl font-semibold tracking-wide">Abel's Space</p>
+                            </div>
+    
+                            <div class="hidden md:flex">
+                                <div class="p-2 flex justify-between items-center gap-4 tracking-wide text-[#000] md:text-xs lg:text-sm">
+                                    <a href="" class="hover:underline">Home</a>
+                                    <a href="" class="hover:underline">About</a>
+                                    <a href="" class="hover:underline">Service</a>
+                                    <a href="" class="hover:underline">portfolio</a>
+                                    <a href="" class="hover:underline">Blog</a>
+                                    <a href="./contact.html" class="hover:underline">Contact</a>
+                                </div>
+                            </div>
+                            <div class="w-3/5 md:w-fit flex justify-center">
+                                <div class="w-full p-2 flex justify-between items-center text-[#000] text-sm gap-4">
+                                    <a href="">
+                                        <i class="fa fa-facebook" aria-hidden="true"></i>
+                                    </a>
+                                    <a href="">
+                                        <i class="fa fa-instagram" aria-hidden="true"></i>
+                                    </a>
+                                    <a href="">
+                                        <i class="fa fa-twitter" aria-hidden="true"></i>
+                                    </a>
+                                    <a href="">
+                                        <i class="fa fa-linkedin" aria-hidden="true"></i>
+                                    </a>
+                                <div> 
+                            </div>
+                        <!-- responsive footer dropdown -->
+                        <div class="dropdown">
+                            <div id="myDropdown" class="dropdown-content bg-gradient-to-b from-[#EBEBEB] to-[#FFFFFF] rounded shadow">
+                                <a href="" class="">Home</a>
+                                <a href="" class="">About</a>
+                                <a href="" class="">Service</a>
+                                <a href="" class="">portfolio</a>
+                                <a href="" class="">Blog</a>
+                                <a href="./contact.html" class="hover:underline">Contact</a>
+                            </div>
+                            <button onclick="dropDownFunction()" class="dropbtn md:hidden">
+                                <i class="fa fa-ellipsis-v fa-lg" aria-hidden="true"></i>
+                            </button>
+                        </div>    
+                    </div>
+                </div>
+            </div>
+            <p class="text-center p-8 capitalize font-semibold text-xs text-[#000]">
+                Copyright <i class="fa fa-copyright" aria-hidden="true"></i> 2022. all rights reserved
+            </p>
+        </div>
+        <!-- End of footer -->
+    </div>
+    </div>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="../../js/script.js"></script>
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        loop: true,
+        spaceBetween: 10,
+        slidesPerView: 4,
+        freeMode: true,
+        watchSlidesProgress: true,
+      });
+      var swiper2 = new Swiper(".mySwiper2", {
+        loop: true,
+        spaceBetween: 10,
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        thumbs: {
+          swiper: swiper,
+        },
+      });
+    </script>
+</body>
+</html>
