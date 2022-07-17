@@ -13,6 +13,21 @@
 </head>
 <body class="overflow-x-hidden font-family">
     <div class="w-full h-auto">
+        <!-- responsive navbar starts here -->
+        <div class="backdrop" id="backDrop">
+            <div class="bg-[#fff] sidenav" id="sideNav">
+                <div class="m-6 flex flex-row items-center gap-2">
+                    <div class="cursor-pointer  text-[#0957CB]" onclick="closeMenu()">
+                        <i class="fa fa-bars fa-md" aria-hidden="true"></i>
+                    </div>
+                    <!-- <div class="p-2 font-semibold text-md tracking-wide text-[#0957CB]">
+                        <span>Abel's Space</span>
+                    </div> -->
+                </div>
+            </div>
+        </div>
+        
+        <!-- ends here -->
         <!-- phone number section at the top starts here -->
         <div class="relative w-full h-auto hidden lg:flex justify-end bg-[#0042A4] ">
             <section class="flex justify-between items-center p-4 text-[#fff] text-[11px] gap-4 mx-10">
@@ -26,11 +41,43 @@
             </section>
         </div>
         <!-- ends here -->
+        <!-- navigation section starts here -->
+        <div class="w-full h-auto flex justify-center items-center sticky top-0 bg-[#0957CB] lg:py-2">
+            <div class="w-11/12 h-auto flex justify-between items-center">
+                <div class="lg:hidden text-white my-6 cursor-pointer hover:-translate-y-1 hover:scale-110 duration-700"
+                onclick="openMenu()">
+                    <i class="fa fa-bars fa-lg" aria-hidden="true"></i>
+                </div>
+                <div class="p-2 font-semibold text-xl tracking-wide text-[#fff] hidden lg:flex">
+                    <span>Abel's Space</span>
+                </div>
+                <div class="p-2 hidden lg:flex justify-between items-center gap-4 tracking-wide text-[#fff] text-xs xl:text-sm">
+                    <a href="./search.html" class="hover:underline">Search</a>
+                    <a href="" class="hover:underline">To offer</a>
+                    <a href="" class="hover:underline">Move</a>
+                    <a href="" class="hover:underline">Insurance</a>
+                    <a href="" class="hover:underline">Place an Ad</a>
+                </div>
+
+                <div class="w-64">
+
+                </div>
+                <div class="p-2 flex justify-between items-center gap-4 tracking-wide text-[#fff] text-xs xl:text-sm">
+                    <a href="" class="hover:underline hidden lg:inline-block">
+                        <p>List a Place</p>
+                    </a>
+                    <button class="border-none py-2 px-6 text-xs rounded bg-[#0957CB] text-[#fff]">
+                        Login
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- navigation section ends here -->
         <!-- contact section begins here -->
         <div class="flex justify-center items-center">
             <div class="w-11/12 h-auto my-12">
-                <div class="grid lg:grid-cols-3 gap-4">
-                    <div class="lg:col-span-2 h-auto">
+                <div class="w-full grid lg:grid-cols-2 gap-4">
+                    <div class="w-auto h-auto">
                         <div class="w-full h-auto flex justify-start">
                             <!-- contact form section starts here -->
                             <div class="w-full lg:w-3/4 h-auto">
@@ -38,7 +85,7 @@
                                     <p class="capitalize text-[#0957CB] text-xl font-semibold">Contact Us</p>
                                 </div>
                                 <div class="mx-2 w-16 border border-[#96B6FB] rounded"></div>
-                                <div class="flex justify-start text-[#585757] text-md py-6">
+                                <div class="flex justify-start text-[#585757] text-sm py-6">
                                     <p>Hello there we are always looking for ways to help and improve.</p>
                                 </div>
                                 <div class="w-full">
@@ -73,7 +120,7 @@
                     <!-- end of form section -->
 
                     <!-- map section starts here -->
-                    <div class="h-[30rem] rounded">
+                    <div class="w-auto h-[30rem] rounded">
                         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1009058.2639950551!2d6.691469669291524!3d8.913590745836654!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x104e6157ce3eeda9%3A0x32af1c368be32dfc!2sFederal%20Capital%20Territory!5e0!3m2!1sen!2sng!4v1653069476266!5m2!1sen!2sng"
                         width="100%" height="100%" style="border:0; border-radius: 10px;" allowfullscreen=""
                        loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
@@ -288,5 +335,25 @@
         </div>
         <!-- End of footer -->
     </div>
+
+    <script>
+        function openMenu(){
+            const doc = document.getElementById('sideNav')
+            const doc1 = document.getElementById('backDrop')
+            if(doc !== null && doc1 !== null){
+                doc.style.width="fit-content"
+                doc1.style.width="100%"
+            }
+        }
+
+        function closeMenu(){
+            const doc = document.getElementById('sideNav')
+            const doc1 = document.getElementById('backDrop')
+            if(doc !== null && doc1 !== null){
+                doc.style.width = "0px"
+                doc1.style.width = "0px"
+            }
+        }
+    </script>
 </body>
 </html>
