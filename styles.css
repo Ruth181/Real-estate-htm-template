@@ -214,3 +214,33 @@ select::after{
     top: 0;
     left: 0;
   }
+
+  /* flickity styles */
+  .carousel {
+    background: #EEE;
+    border-radius: 10px;
+    height: 100%;
+  }
+  
+  .carousel-cell {
+    margin-right: 20px;
+    overflow: hidden;
+    height: 100%;
+    border-radius: 10px;
+  }
+  
+  .carousel-cell img {
+    /* display: block; */
+    max-height: 100%;
+    border-radius: 10px;
+
+    /* width: 100%; */
+  }
+  
+  @media screen and ( min-width: 768px ) {
+    .carousel-cell img {
+        height: 100%;
+        border-radius: 10px;
+        /* width: 100%; */
+    }
+  }

@@ -463,8 +463,8 @@
             </div>
         </div>
         <div class="flex justify-center">
-             <div class="w-4/5 flex justify-center">
-                    <div class="w-11/12 grid md:grid-cols-2 lg:grid-cols-3 gap-2 my-6 leading-relaxed">
+             <div class="w-11/12 lg:w-10/12 flex justify-center">
+                    <div class="w-11/12 lg:w-10/12 grid md:grid-cols-2 lg:grid-cols-3 gap-2 my-6 leading-relaxed">
                         <div class="w-full md:w-[17rem] h-68 rounded-lg border border-[#E5E5E5] cursor-pointer transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300 hover:border-none hover:shadow-xl">
                             <div class="w-full flex justify-start">
                                 <div class="flex justify-between items-center m-4">
@@ -613,12 +613,12 @@
 
                         <div class="hidden md:flex">
                             <div class="p-2 flex justify-between items-center gap-4 tracking-wide text-[#000] md:text-xs lg:text-sm">
-                                <a href="" class="hover:underline">Home</a>
+                                <a href="./index.html" class="hover:underline">Home</a>
                                 <a href="" class="hover:underline">About</a>
                                 <a href="" class="hover:underline">Service</a>
                                 <a href="" class="hover:underline">portfolio</a>
                                 <a href="" class="hover:underline">Blog</a>
-                                <a href="./contact.html" class="hover:underline">Contact</a>
+                                <a href="./html/pages/contact.html" class="hover:underline">Contact</a>
                             </div>
                         </div>
                         <div class="w-3/5 md:w-fit flex justify-center">
@@ -665,13 +665,14 @@
     <script src="./js/script.js"></script>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script>
-        // group slider function
-        function openDropDownFunction(){
+         function openDropDownFunction(){
             var elementStyle  = document.getElementById('navBar').style;
             elementStyle.width = '100%';
             elementStyle.height="50%";
             elementStyle.background = "blue";
         }
+        // group slider function
+       
         var swiper = new Swiper(".mySwiper", {
             slidesPerView: 3,
             spaceBetween: 30,
